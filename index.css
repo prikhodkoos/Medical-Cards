@@ -1,11 +1,174 @@
-body {
-    background-color: #eee;
-}
-
 .container {
     margin-top: 50px;
 }
 
 .card {
     margin-bottom: 30px;
+    box-shadow: 5px 5px 5px rgba(158, 158, 158, 0.2);
+}
+
+.card-footer {
+    font-size: .95em;
+}
+
+.card-footer,
+.card-header {
+    background-color: rgb(0, 122, 122);
+    color: white
+}
+
+.list-group-item {
+    padding: 0;
+    padding-top: 5px;
+}
+
+.section-title {
+    padding-left:5px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section-body {
+    margin: 10px 20px 20px 30px;
+}
+
+.card-body {
+    padding: 0
+}
+
+p.info {
+    margin: 0;
+}
+
+p.author-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    max-width: 300px;
+}
+
+p.author-position {
+    color: #797979
+}
+
+.popover {
+    max-width: 400px;
+}
+
+span.author-name:hover {
+    font-weight: 500;
+}
+
+.author-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.requirements {
+    margin: 0;
+}
+
+.requirements .col-4 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.requirement {
+    box-shadow: 5px 5px 5px rgba(158, 158, 158, 0.2);
+    border: 2px solid rgb(0, 122, 122);
+    padding: 0;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+    max-height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.requirement .type {
+    font-size: .8em;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.requirement .body {
+    font-weight: bold;
+    text-align: center
+}
+
+.requirement i {
+    margin: 0;
+}
+
+.requirement:hover i {
+    color: rgb(0, 122, 122);
+}
+
+.author-name {
+    float: left;}
+
+.created {
+    float: right;
+}
+
+.location,
+span.author-name {
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+
+.date {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.status {
+    box-sizing: border-box;
+    float: right;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: .8em;
+}
+
+.list-group-flush {
+    width: 100%;
+}
+
+.timezone,
+.location{
+    font-weight: bold;
+    margin: 0
+}
+
+i {
+    margin-right: 10px;
+    transition: 100ms ease-in-out;
+}
+
+.status-submitted {
+    background-color: #a3f78a;
+    color: #06520a;
+    font-weight: 600;
+}
+
+.status-submitted::after {
+    content: 'submitted'
+}
+
+.requirs {
+    list-style: none;
+    padding: 0;
+}
+.requirs li{
+    padding-left: 30px;
+}
+
+.btn-group {
+    float: right;
 }

@@ -6,57 +6,105 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <title>Medical Cards</title>
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center justify-content-sm-start">
-            <div class="col-10 col-sm-12 col-md-6 col-lg-4">
+            <div class="col-10 col-sm-12 col-md-6 col-xl-4">
                 <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="date"><i class="far fa-calendar-alt"></i> 12 June 2019</span>
+                            <span class="status status-submitted"></span>
+                        </div>               
                     </div>
-                </div>  
-            </div>
-            <div class="col-10 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <span class="section-title">When</span>
+                                <div class="section-body">
+                                    <p class="timezone"><i class="far fa-clock"></i>00:00 - 15:00 (GMT+2)</p>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="section-title">Where</span>
+                                <div class="section-body">
+                                    <p class="location" data-toggle="popover" data-trigger="hover" data-html="true" data-placement="top"
+                                        title="Morristown Medical Center" 
+                                        data-content="<i class='fas fa-map-marked-alt'></i> New York, 100 Madison Avenue Morristown, NJ 07960-6136">
+                                        <i class="fas fa-map-marker-alt"></i>Morristown Medical Center
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="section-title">Requirements</span>
+                                <div class="section-body requirements">
+                                    <div class="row justify-content-around align-items-stretch" style="margin:0">
+                                        <div class="col-4">
+                                            <div class="requirement">
+                                                <span class="type">Language</span>
+                                                <i class="fas fa-flag-usa d-flex justify-content-center"></i>
+                                                <span class="body d-flex justify-content-center">English</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="requirement">
+                                                <span class="type">Equipment</span>
+                                                <i class="fas fa-toolbox d-flex justify-content-center"></i>
+                                                <span class="body d-flex justify-content-center">Operation Room</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 ">
+                                            <div class="requirement">
+                                                <span class="type">Education</span>
+                                                <i class="fas fa-graduation-cap  d-flex justify-content-center"></i>
+                                                <span class="body d-flex justify-content-center">RN</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="section-title">Participants</span>
+                                <div class="section-body">
+                                    <div><i class="fas fa-user-friends"></i></i><b>10</b> participants</div>
+                                    <i class="fas fa-user"></i><b>Michelle Sprouse</b> accepted 5 hours ago
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>  
-            </div>
-            <div class="col-10 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <div class="card-footer">
+                        <div class="author">
+                            <span class="author-name" data-html="true" data-toggle="popover" data-placement="bottom" data-trigger="hover"
+                                data-content="
+                                    <div class='d-flex align-items-center'>
+                                        <img class='author-photo' src='https://i.pravatar.cc/300?img=32'/>
+                                        <div class='d-flex flex-column'>
+                                            <p class='info author-name'>Vanessa-Maria Olsen</p>
+                                            <p class='info author-position'>Physical Therapist</p>
+                                            <p class='info author-phone'><i class='fas fa-phone'></i>+1-345-121-009</p>
+                                        </div>
+                                    </div>
+                                ">
+                                Vanessa-Maria Olsen
+                            </span>
+                            <span class="created">2 days ago</span>
+                        </div>
                     </div>
-                </div>  
+                </div>    
             </div>
-            <div class="col-10 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>  
-            </div>
-            <div class="col-10 col-sm-12 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>  
-            </div>
-        </div> 
+        </div>
     </div>
+    <script> 
+        $(document).ready(function(){ 
+          $('[data-toggle="popover"]').popover();  
+        }); 
+    </script> 
 </body>
 </html>
